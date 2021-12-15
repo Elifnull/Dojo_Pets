@@ -19,6 +19,14 @@ class Ninja:
     def feed(self):
         self.pet.eat()
 
+class Ronin(Ninja):
+    def __init__(self, first_name, last_name, pet, treats, pet_food, owner_trick):
+        super().__init__(first_name, last_name, pet, treats, pet_food)
+        self.owner_trick = owner_trick
+    
+    def trick(self):
+        print("yipppi Kiyayay")
+
 
 sharko_tricks =("coo for affection", "deep sea dive")
 
